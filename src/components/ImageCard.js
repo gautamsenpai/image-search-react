@@ -9,7 +9,7 @@ class ImageCard extends React.Component {
         this.imageRef = React.createRef();
     }
 
-    componentDidMount(){
+    componentDidMount = () => {
         this.imageRef.current.addEventListener("load", this.setSpans);
     }
 
